@@ -1,0 +1,26 @@
+aliyun:
+  oss:
+    accessKeyId: LTAI5t6PW3PZkhkg8oSCsdrP
+    accessKeySecret: RkLmLhl41pDXCry0JrDssI16Q2zjl9
+    bucketName: web-circle
+    endpoint: oss-cn-beijing.aliyuncs.com
+
+mybatis:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    map-underscore-to-camel-case: true
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    password: 123456
+    url: jdbc:mysql://localhost:3306/atguigu
+    username: root
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 100MB
+      #spring事务管理日志
+# 日志配置
+logging:
+  level:
+    root: debug
